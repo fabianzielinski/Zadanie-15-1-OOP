@@ -40,10 +40,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
 	Column.prototype = {
 	    addCard: function(card) {
-	      this.element.querySelector('ul').appendChild(card.element);
+	    	this.element.querySelector('ul').appendChild(card.element);
 	    },
 	    removeColumn: function() {
-	      this.element.parentNode.removeChild(this.element);
+	    	this.element.parentNode.removeChild(this.element);
 	    }
 	};
 
@@ -55,11 +55,11 @@ document.addEventListener('DOMContentLoaded', function() {
 	    this.element = generateTemplate('card-template', { description: this.description }, 'li');
 
 	    this.element.querySelector('.card').addEventListener('click', function (event) { 
-	      event.stopPropagation();
+	    	event.stopPropagation();
 
-	      if (event.target.classList.contains('btn-delete')) {
-	        self.removeCard();
-	      }
+	    	if (event.target.classList.contains('btn-delete')) {
+	        	self.removeCard();
+	      	}
 	    });
 	}
 
@@ -72,18 +72,18 @@ document.addEventListener('DOMContentLoaded', function() {
 	var board = {
 	    name: 'Kanban Board',
 	    addColumn: function(column) {
-	      this.element.appendChild(column.element);
-	      initSortable(column.id); //About this feature we will tell later
+	    	this.element.appendChild(column.element);
+	    	initSortable(column.id); //About this feature we will tell later
 	    },
 	    element: document.querySelector('#board .column-container')
 	};
 
 	function initSortable(id) {
-	  var el = document.getElementById(id);
-	  var sortable = Sortable.create(el, {
-	    group: 'kanban',
-	    sort: true
-	  });
+		var el = document.getElementById(id);
+		var sortable = Sortable.create(el, {
+			group: 'kanban',
+			sort: true
+		});
 	}
 
 	document.querySelector('#board .create-column').addEventListener('click', function() {
