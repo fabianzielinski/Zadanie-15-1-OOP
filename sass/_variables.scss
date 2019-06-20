@@ -1,0 +1,45 @@
+
+/* Colors */
+
+$black-basic: #000;
+$white-basic: #fff;
+$yellow-light: rgba(250, 255, 100, 1);
+$gray-basic: rgba(100, 100, 100, 1);
+$green-light: rgba(0, 300, 150, 1);
+$blue-light: rgba(0, 150, 150, 1);
+
+
+/*Components colors*/
+
+$board-backcolor: $yellow-light;
+$board-color: $black-basic;
+$column-backcolor: $gray-basic;
+$column-color: $white-basic;
+$btndel-backcolor: $white-basic;
+$btndel-color: $black-basic;
+$btn-backcolor: $black-basic;
+$btn-color: $white-basic;
+$card-backcolor: $green-light;
+$card-color: $blue-light;
+
+
+/* Fonts Size */
+
+$main-fsize: 24px;
+$normal-fsize: 20px;
+$smal-fsize: 16px;
+
+/* Fonts */
+
+$font-roboto: 'Roboto', sans-serif;
+$font-caveat: 'Caveat', cursive;
+$font-lobster: 'Lobster', cursive;
+
+/* Font Weight */
+
+$light-font: 300;
+$normal-font: 400;
+$average-font: 500;
+$heavy-font: 700;
+
+

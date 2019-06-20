@@ -1,0 +1,79 @@
+body {
+    margin: 0 auto;
+    font-family: $font-lobster;
+}
+
+.board {
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    background: $board-backcolor;
+    color: $board-color;
+    font-size: $main-fsize;
+    display: inline-block;
+    text-align: center;
+}
+
+.column {
+    width: 30%;
+    border-radius: 15px;
+    border: 2px solid $black-basic;
+    margin: 5px;
+    float: left;
+    text-align: center;
+    padding: 15px;
+    position: relative;
+    background-color: $column-backcolor;
+    color: $column-color;
+    .btn-delete {
+        font-family: $font-roboto; 
+        border-radius: 50%;
+        border: none;
+        background: $btndel-backcolor;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transition: .5s ease-in;
+        @media(min-width: 1200px) {
+            &:hover {
+                background: $btn-backcolor;
+                color: $btn-color;
+            }
+        }
+    }
+    ul {
+        list-style-type: none;
+        align-self: center;
+        margin-left: -45px;
+        
+    }
+}
+
+.card {
+    border: 1px solid $card-backcolor;
+    background: $card-backcolor;
+    border-radius: 5px;
+    color: $card-color;
+    padding: 10px;
+    position: relative;
+    margin-top: 5px;
+}
+
+.create-column, .add-card {
+    width: 100px;
+    height: 65px;
+    border-radius: 15px;
+    border: none;
+    background: $btn-backcolor;
+    color: $btn-color;
+    font-size: $normal-fsize;
+    transition: .5s ease-in-out;
+    font-family: $font-lobster;
+    font-weight: $average-font;
+    @media(min-width: 1200px) {
+        &:hover {
+            color: $btndel-color;
+            background: $btndel-backcolor;
+        }
+    }    
+}
